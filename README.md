@@ -1,28 +1,28 @@
-# Portfólio Profissional - Luiz Eduardo
+# Portfólio - Luiz Eduardo
 
-Portfólio acadêmico responsivo e acessível, feito em HTML5, CSS3 e JavaScript puro, para a atividade do CEUNI FAMETRO (prof. Alexsander Farias).
+Portfólio acadêmico responsivo e acessível de Luiz Eduardo, estudante de ADS no CEUNI FAMETRO, com tema claro e escuro.
 
-Site publicado: https://luiz-eduardo1005.github.io/portfolio/
+Site: https://luiz-eduardo1005.github.io/portfolio/
 
-## Stack
+## Tecnologias
 
-HTML5, CSS3 e JavaScript puro (sem frameworks e sem dependências externas). Publicação via GitHub Pages.
+HTML5, CSS3 e JavaScript puro, sem frameworks, sem CDN e com fontes do sistema. Publicação via GitHub Pages.
 
 ## Estrutura
 
 ```
 index.html   # página única com 5 seções
-style.css    # estilos e tokens
-script.js    # menu mobile, ano do rodapé, link ativo
+style.css    # tokens, layout e temas
+script.js    # menu mobile, tema, link ativo, ano do rodapé
 docs/        # documentos SPECTION
 specs/       # especificação da feature
 ```
 
-## Como rodar localmente
+## Como rodar
 
-Abra o arquivo `index.html` no navegador.
+Abra o `index.html` no navegador.
 
-## Processo SPECTION
+## Documentos SPECTION
 
 - [Product brief](docs/product-brief.md)
 - [PRD](docs/prd.md)
@@ -39,12 +39,12 @@ Abra o arquivo `index.html` no navegador.
 
 | ID | Teste | Status |
 | --- | --- | --- |
-| T-001 | Navegação pelas 5 seções (menu e âncoras) | Pendente |
-| T-002 | Layout responsivo em 390px e desktop, sem rolagem horizontal | Pendente |
-| T-003 | Navegação por teclado, foco visível e skip link | Pendente |
-| T-004 | Links externos abrem em nova aba e funcionam | Pendente |
-| T-005 | Menu hambúrguer no mobile (abrir, fechar por link e Esc) | Pendente |
+| T-001 | Página carrega sem erros de console | Aprovado |
+| T-002 | Menu navega até Sobre, Projetos e Contato | Aprovado |
+| T-003 | Em 390px não há rolagem horizontal | Aprovado |
+| T-004 | Links externos abrem em nova aba no destino correto | Aprovado |
+| T-005 | Tab destaca links com contorno visível | Aprovado |
 
-## Uso de IA
+## Autor
 
-IA generativa (Claude) foi usada como assistente na estruturação do código e no preenchimento do Builder, com revisão do aluno.
+Luiz Eduardo - ADS, CEUNI FAMETRO.
