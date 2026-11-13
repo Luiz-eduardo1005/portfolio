@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfólio de Luiz Eduardo, estudante de Análise e Desenvolvimento de Sistemas no CEUNI FAMETRO, com foco em desenvolvimento web.">
+  <meta name="theme-color" content="#0b1222">
+  <title>Luiz Eduardo | Portfólio</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#inicio">Luiz Eduardo<span class="brand-dot" aria-hidden="true">.</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
+        <span class="menu-icon" aria-hidden="true"></span>
+        <span class="sr-only">Menu</span>
+      </button>
+      <nav aria-label="Menu principal" id="menu-principal" class="nav">
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#competencias">Competências</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <span id="conteudo" tabindex="-1"></span>
+
+    <section class="hero" aria-labelledby="titulo-hero">
+      <div class="container">
+        <p class="eyebrow">Estudante de ADS · CEUNI FAMETRO · Manaus-AM</p>
+        <h1 id="titulo-hero">Luiz<br>Eduardo<span class="accent">.</span></h1>
+        <p class="hero-line">Desenvolvedor web em formação, construindo projetos práticos com foco em experiências úteis, acessíveis e bem-feitas.</p>
+        <p class="hero-meta">Interesse: desenvolvimento web, front-end e full-stack.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projetos">Ver projetos</a>
+          <a class="btn btn-ghost" href="#contato">Contato</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section" aria-labelledby="titulo-sobre">
+      <div class="container narrow">
+        <h2 id="titulo-sobre"><span class="num" aria-hidden="true">01</span> Sobre mim</h2>
+        <p>Sou estudante de Análise e Desenvolvimento de Sistemas (ADS) no CEUNI FAMETRO, em Manaus-AM. Crio projetos práticos que resolvem problemas reais do meu dia a dia e da faculdade — de um app para acompanhar o consumo de energia de casa a um sistema de fichas para meu grupo de RPG e um trabalho acadêmico sobre mobilidade urbana em Manaus.</p>
+      </div>
+    </section>
+
+    <section id="competencias" class="section" aria-labelledby="titulo-comp">
+      <div class="container">
+        <h2 id="titulo-comp"><span class="num" aria-hidden="true">02</span> Competências</h2>
+        <div class="grid grid-2">
+          <div class="card">
+            <h3>Técnicas</h3>
+            <ul class="chips">
+              <li>HTML e CSS</li>
+              <li>JavaScript e TypeScript</li>
+              <li>React e Next.js</li>
+              <li>Tailwind CSS</li>
+              <li>Supabase (Postgres)</li>
+              <li>PWA (funcionamento offline)</li>
+              <li>Git, GitHub e Vercel</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Socioemocionais</h3>
+            <ul class="chips chips-warm">
+              <li>Trabalho em equipe</li>
+              <li>Resolução de problemas</li>
+              <li>Aprendizado contínuo</li>
+              <li>Comunicação</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos" class="section" aria-labelledby="titulo-proj">
+      <div class="container">
+        <h2 id="titulo-proj"><span class="num" aria-hidden="true">03</span> Projetos</h2>
+        <div class="grid grid-3">
+
+          <article class="card project">
+            <p class="tag">Acadêmico · em equipe</p>
+            <h3>Rotas Seguras</h3>
+            <p class="context">Disciplina Tecnologias Urbanas (FAMETRO), equipe de 3 alunos.</p>
+            <p><strong>Problema:</strong> escolher um trajeto a pé mais seguro à noite em Manaus.</p>
+            <p><strong>Solução:</strong> PWA mobile que sugere a rota combinando iluminação, fluxo de pessoas e risco, com mapa e avaliação comunitária de trechos.</p>
+            <p class="note">Aviso: usa dados simulados para demonstração.</p>
+            <ul class="chips chips-sm" aria-label="Tecnologias">
+              <li>React</li><li>TypeScript</li><li>Vite</li><li>Leaflet</li><li>Tailwind CSS</li><li>PWA</li><li>Vitest</li>
+            </ul>
+            <p class="links"><a class="btn btn-ghost" href="https://github.com/Luiz-eduardo1005/rotas-seguras" target="_blank" rel="noopener noreferrer">Ver repositório<span class="sr-only"> (abre em nova aba)</span></a></p>
+          </article>
+
+          <article class="card project">
+            <p class="tag">Pessoal</p>
+            <h3>Energia da Casa</h3>
+            <p><strong>Problema:</strong> acompanhar o consumo de energia elétrica de casa ao longo do mês e evitar surpresa na conta.</p>
+            <p><strong>Solução:</strong> PWA para registrar a leitura diária do medidor, organizar ciclos de cobrança com meta em kWh e funcionar offline, sincronizando com o banco quando houver internet.</p>
+            <ul class="chips chips-sm" aria-label="Tecnologias">
+              <li>JavaScript</li><li>PWA</li><li>Supabase</li><li>Vercel</li>
+            </ul>
+            <p class="links"><a class="btn btn-ghost" href="https://energia-da-casa.vercel.app" target="_blank" rel="noopener noreferrer">Ver site<span class="sr-only"> (abre em nova aba)</span></a></p>
+          </article>
+
+          <article class="card project">
+            <p class="tag">Pessoal</p>
+            <h3>Myths — Duel for the Throne</h3>
+            <p><strong>Problema:</strong> manter as fichas dos personagens do meu grupo de RPG de mesa em um só lugar.</p>
+            <p><strong>Solução:</strong> site de fichas com acesso por PIN do jogador ou senha do mestre, controle de vida (dano/cura/descanso) e XP com histórico de alterações, além de lore e habilidades por personagem.</p>
+            <ul class="chips chips-sm" aria-label="Tecnologias">
+              <li>HTML</li><li>JavaScript (ES Modules)</li><li>Vercel Functions</li><li>Vercel Blob</li>
+            </ul>
+            <p class="links"><a class="btn btn-ghost" href="https://myths-duel-for-the-throne.vercel.app" target="_blank" rel="noopener noreferrer">Ver site<span class="sr-only"> (abre em nova aba)</span></a></p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section" aria-labelledby="titulo-contato">
+      <div class="container narrow">
+        <h2 id="titulo-contato"><span class="num" aria-hidden="true">04</span> Contato</h2>
+        <p>Quer ver meu código ou acompanhar o que estou construindo? Meu perfil no GitHub reúne os projetos.</p>
+        <p class="links"><a class="btn btn-primary" href="https://github.com/Luiz-eduardo1005" target="_blank" rel="noopener noreferrer">Meu GitHub<span class="sr-only"> (abre em nova aba)</span></a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Portfólio acadêmico - <span id="ano">2026</span></p>
+    </div>
+  </footer>
+</body>
+</html>
