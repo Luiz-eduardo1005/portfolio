@@ -14,11 +14,7 @@
 
   <header class="site-header">
     <div class="header-inner">
-      <a class="brand" href="#inicio">Luiz Eduardo<span class="brand-dot" aria-hidden="true">.</span></a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
-        <span class="menu-icon" aria-hidden="true"></span>
-        <span class="sr-only">Menu</span>
-      </button>
+      <a class="brand" href="#inicio" aria-label="Luiz Eduardo, início"><span class="tk-p">&lt;</span>Luiz <span class="tk-p">/&gt;</span></a>
       <nav aria-label="Menu principal" id="menu-principal" class="nav">
         <ul>
           <li><a href="#sobre">Sobre</a></li>
@@ -27,6 +23,17 @@
           <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" aria-pressed="true" aria-label="Tema escuro">
+          <svg class="ico-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="ico-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <a class="btn btn-primary btn-sm header-cta" href="#contato">Contato</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
+          <span class="menu-icon" aria-hidden="true"></span>
+          <span class="sr-only">Menu</span>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -34,28 +41,74 @@
     <span id="conteudo" tabindex="-1"></span>
 
     <section class="hero" aria-labelledby="titulo-hero">
-      <div class="container">
-        <p class="eyebrow">Estudante de ADS · CEUNI FAMETRO · Manaus-AM</p>
-        <h1 id="titulo-hero">Luiz<br>Eduardo<span class="accent">.</span></h1>
-        <p class="hero-line">Desenvolvedor web em formação, construindo projetos práticos com foco em experiências úteis, acessíveis e bem-feitas.</p>
-        <p class="hero-meta">Interesse: desenvolvimento web, front-end e full-stack.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#projetos">Ver projetos</a>
-          <a class="btn btn-ghost" href="#contato">Contato</a>
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="badge"><span class="pulse" aria-hidden="true"></span>Aberto a estágio e projetos</p>
+          <p class="hello">Olá, eu sou</p>
+          <h1 id="titulo-hero">Luiz <span class="grad">Eduardo</span></h1>
+          <p class="hero-sub">Desenvolvedor <strong>web</strong> em formação, com foco em <strong>front-end</strong> e <strong>full-stack</strong>.</p>
+          <p class="hero-line">Construo projetos práticos com foco em experiências úteis, acessíveis e bem-feitas. Estudo ADS no CEUNI FAMETRO, em Manaus-AM.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projetos">Ver projetos</a>
+            <a class="btn btn-ghost" href="#contato">Contato</a>
+            <a class="btn btn-ghost" href="https://github.com/Luiz-eduardo1005" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (abre em nova aba)</span></a>
+          </div>
         </div>
+
+        <div class="code-card" aria-hidden="true">
+          <div class="code-bar">
+            <span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span>
+            <span class="code-file">luiz.ts</span>
+          </div>
+<pre class="code-body"><code><span class="tk-k">const</span> <span class="tk-v">luiz</span> = {
+  <span class="tk-n">nome</span>: <span class="tk-s">"Luiz Eduardo"</span>,
+  <span class="tk-n">curso</span>: <span class="tk-s">"ADS · CEUNI FAMETRO"</span>,
+  <span class="tk-n">cidade</span>: <span class="tk-s">"Manaus/AM"</span>,
+  <span class="tk-n">foco</span>: [<span class="tk-s">"front-end"</span>, <span class="tk-s">"full-stack web"</span>],
+  <span class="tk-n">stack</span>: [
+    <span class="tk-s">"TypeScript"</span>, <span class="tk-s">"React"</span>,
+    <span class="tk-s">"Next.js"</span>, <span class="tk-s">"Supabase"</span>,
+  ],
+  <span class="tk-n">aberto_a</span>: <span class="tk-s">"estágio"</span>,
+};</code></pre>
+        </div>
+      </div>
+
+      <div class="container">
+        <ul class="stats" aria-label="Números do portfólio">
+          <li><strong>3</strong><span>Projetos em destaque</span></li>
+          <li><strong>14</strong><span>Repositórios públicos no GitHub</span></li>
+          <li><strong>ADS</strong><span>FAMETRO</span></li>
+          <li><strong>PWA</strong><span>offline-first em 2 projetos</span></li>
+        </ul>
       </div>
     </section>
 
     <section id="sobre" class="section" aria-labelledby="titulo-sobre">
-      <div class="container narrow">
-        <h2 id="titulo-sobre"><span class="num" aria-hidden="true">01</span> Sobre mim</h2>
-        <p>Sou estudante de Análise e Desenvolvimento de Sistemas (ADS) no CEUNI FAMETRO, em Manaus-AM. Crio projetos práticos que resolvem problemas reais do meu dia a dia e da faculdade — de um app para acompanhar o consumo de energia de casa a um sistema de fichas para meu grupo de RPG e um trabalho acadêmico sobre mobilidade urbana em Manaus.</p>
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">01 · Sobre</p>
+          <h2 id="titulo-sobre">Sobre mim</h2>
+        </header>
+        <div class="about-grid">
+          <p class="about-text">Sou estudante de Análise e Desenvolvimento de Sistemas (ADS) no CEUNI FAMETRO, em Manaus-AM. Crio projetos práticos que resolvem problemas reais do meu dia a dia e da faculdade: de um app para acompanhar o consumo de energia de casa a um sistema de fichas para meu grupo de RPG e um trabalho acadêmico sobre mobilidade urbana em Manaus.</p>
+          <dl class="facts card">
+            <div><dt>Curso</dt><dd>ADS · CEUNI FAMETRO</dd></div>
+            <div><dt>Cidade</dt><dd>Manaus, AM</dd></div>
+            <div><dt>Foco</dt><dd>Front-end e full-stack web</dd></div>
+            <div><dt>Stack</dt><dd>TypeScript, React, Next.js, Supabase</dd></div>
+            <div><dt>Aberto a</dt><dd>Estágio e projetos</dd></div>
+          </dl>
+        </div>
       </div>
     </section>
 
     <section id="competencias" class="section" aria-labelledby="titulo-comp">
       <div class="container">
-        <h2 id="titulo-comp"><span class="num" aria-hidden="true">02</span> Competências</h2>
+        <header class="section-head">
+          <p class="eyebrow">02 · Competências</p>
+          <h2 id="titulo-comp">Competências</h2>
+        </header>
         <div class="grid grid-2">
           <div class="card">
             <h3>Técnicas</h3>
@@ -84,7 +137,10 @@
 
     <section id="projetos" class="section" aria-labelledby="titulo-proj">
       <div class="container">
-        <h2 id="titulo-proj"><span class="num" aria-hidden="true">03</span> Projetos</h2>
+        <header class="section-head">
+          <p class="eyebrow">03 · Projetos</p>
+          <h2 id="titulo-proj">Projetos</h2>
+        </header>
         <div class="grid grid-3">
 
           <article class="card project">
@@ -127,17 +183,20 @@
     </section>
 
     <section id="contato" class="section" aria-labelledby="titulo-contato">
-      <div class="container narrow">
-        <h2 id="titulo-contato"><span class="num" aria-hidden="true">04</span> Contato</h2>
-        <p>Quer ver meu código ou acompanhar o que estou construindo? Meu perfil no GitHub reúne os projetos.</p>
-        <p class="links"><a class="btn btn-primary" href="https://github.com/Luiz-eduardo1005" target="_blank" rel="noopener noreferrer">Meu GitHub<span class="sr-only"> (abre em nova aba)</span></a></p>
+      <div class="container">
+        <div class="contact card">
+          <p class="eyebrow">04 · Contato</p>
+          <h2 id="titulo-contato">Vamos conversar</h2>
+          <p>Quer ver meu código ou acompanhar o que estou construindo? Meu perfil no GitHub reúne os projetos.</p>
+          <p class="links"><a class="btn btn-primary" href="https://github.com/Luiz-eduardo1005" target="_blank" rel="noopener noreferrer">Meu GitHub<span class="sr-only"> (abre em nova aba)</span></a></p>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>Portfólio acadêmico - <span id="ano">2026</span></p>
+      <p>Portfólio acadêmico · Luiz Eduardo · <span id="ano">2026</span></p>
     </div>
   </footer>
 </body>
